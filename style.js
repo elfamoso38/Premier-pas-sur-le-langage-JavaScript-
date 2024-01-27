@@ -1,3 +1,15 @@
+// Déclaration des éléments à récupéré pour le carroussel
+//Flèche
+const arrowLeft = document.querySelector(".arrow_left");
+const arrowRight = document.querySelector(".arrow_right");
+//Image
+const bannerImage = document.querySelector(".banner-img");
+//Texte
+const bannerText = document.querySelector("#banner p");
+//Bullet point
+const dotsContainer = document.getElementById("dots-Container");
+const dots = document.querySelectorAll(".dot");
+// Déclaration d'un tableau pour gérer les différentes images et texte associé
 const slides = [
 	{
 		"image":"slide1.jpg",

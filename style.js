@@ -31,16 +31,17 @@ const slides = [
 ];
 
 // Activation de la flèche de gauche lors du click
-
 	arrowLeft.addEventListener("click", () => {
+		dots[index].className = "dot";
 		index--;
 		if(0 > index) index = 3;
 		console.log(index);
 		bannerImage.src = "images/slideshow/"+ slides[index].image;
 		bannerText.innerHTML = slides[index].tagLine;
-		//console.log(clickLeft)
+		console.log("clickLeft");
+		dots[index].className = "dot dot_selected";
 	});
-
+// Activation de la flèche de droite
 	arrowRight.addEventListener("click", () => {
 		dots[index].className = "dot";
 		index++;
@@ -48,6 +49,6 @@ const slides = [
 		console.log(index);
 		bannerImage.src = "images/slideshow/"+ slides[index].image;
 		bannerText.innerHTML = slides[index].tagLine;
-		//console.log(clickLeft)
+		console.log("clickRight")
 		dots[index].className = "dot dot_selected";
 	});
